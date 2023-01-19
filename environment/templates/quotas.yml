@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: resource-quota
+spec:
+  hard:
+  {{- range $key, $size := .Values.sizes }}
+    {{- if eq $key $.Values.size }}
+    requests.cpu: {{ $size.requests.cpu }}
+    requests.memory: {{ $size.requests.memory }}
+    requests.storage: {{ $size.requests.storage }}
+    limits.cpu: {{ $size.limits.cpu }}
+    limits.memory: {{ $size.limits.memory }}
+    {{- end }}
+  {{- end }}

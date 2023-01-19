@@ -1,0 +1,29 @@
+---
+adminGroupName: "test-group"
+size: "medium"
+
+sizes:
+  small:
+    limits:
+      cpu: 1
+      memory: 512Mi
+    requests:
+      cpu: 50m
+      memory: 128Mi
+      storage: 1G
+  medium:
+    limits:
+      cpu: 2
+      memory: 1Gi
+    requests:
+      cpu: 500m
+      memory: 256Mi
+      storage: 10G
+  large:
+    limits:
+      cpu: 4
+      memory: 2Gi
+    requests:
+      cpu: 1
+      memory: 512Mi
+      storage: 100G
