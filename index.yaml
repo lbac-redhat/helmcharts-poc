@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  environment:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-03-01T15:59:51.859179759+01:00"
+    description: A Helm chart for deploying a default application environment to OCP
+    digest: 771c799b3b1fc642f62fffd322e91c175e7b2b2a7edf597864203f99a42b715a
+    name: environment
+    type: application
+    urls:
+    - https://lbac-redhat.github.io/helmcharts-poc/environment-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-03-01T15:59:51.858524875+01:00"
